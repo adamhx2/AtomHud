@@ -31,7 +31,12 @@ const skillSections = [
 
   {
     title: "Data Analysis",
-    skills: ["Dashboards", "Ad Hoc Reporting", "Data Validation", "ETL"],
+    skills: [
+      "Dashboards",
+      "Ad Hoc Reporting",
+      "Data Validation",
+      "Extract, Transform, Load",
+    ],
   },
 
   {
