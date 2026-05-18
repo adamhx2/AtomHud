@@ -1,0 +1,245 @@
+/* ==========================================================================
+   Fabricator Demo Page
+   ========================================================================== */
+
+/* Demo shell */
+.fabricator-demo {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: auto minmax(18rem, 1fr) auto;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.demo-column {
+  display: contents;
+  min-width: 0;
+}
+
+/* Two-pane terminal layout */
+.demo-column:first-child .demo-titlebar {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.demo-column:nth-child(2) .demo-titlebar {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.demo-terminal {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.demo-generated {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Terminal panels */
+.demo-terminal,
+.demo-generated {
+  min-width: 0;
+  background: #071007;
+  border: 1px solid rgba(45, 226, 230, 0.35);
+}
+
+.demo-titlebar {
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid rgba(207, 255, 112, 0.28);
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.demo-terminal pre,
+.demo-generated pre {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+  color: var(--text);
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+/* Generated-output highlights */
+.demo-generated-added {
+  display: inline-block;
+  width: fit-content;
+  padding: 0 0.45rem;
+  background: rgba(207, 255, 112, 0.12);
+  color: var(--accent-signal);
+  border-left: 2px solid rgba(207, 255, 112, 0.76);
+  box-shadow: inset 0 0 16px rgba(207, 255, 112, 0.08);
+}
+
+.demo-generated-added--new {
+  background:
+    linear-gradient(90deg, rgba(45, 226, 230, 0.28), rgba(45, 226, 230, 0.08)),
+    rgba(7, 16, 7, 0.8);
+  color: var(--accent-system);
+  border-left-color: var(--accent-system);
+  outline: 1px solid rgba(45, 226, 230, 0.38);
+  text-shadow: 0 0 12px rgba(45, 226, 230, 0.46);
+}
+
+/* Command controls */
+.demo-actions {
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.demo-actions button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 2.25rem;
+  padding: 0.45rem 0.72rem;
+  background:
+    linear-gradient(180deg, rgba(207, 255, 112, 0.12), rgba(7, 16, 7, 0.84)),
+    #071007;
+  border: 1px solid rgba(207, 255, 112, 0.56);
+  color: var(--accent-signal);
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow:
+    inset 0 0 0 1px rgba(216, 227, 207, 0.05),
+    0 0 12px rgba(207, 255, 112, 0.06);
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.demo-actions button::before {
+  content: ">";
+  color: var(--accent-system);
+  font-weight: 900;
+}
+
+.demo-actions button:hover,
+.demo-actions button:focus-visible {
+  border-color: var(--accent-system);
+  background:
+    linear-gradient(180deg, rgba(45, 226, 230, 0.18), rgba(7, 16, 7, 0.86)),
+    #071007;
+  color: #fff;
+  box-shadow:
+    inset 0 0 0 1px rgba(45, 226, 230, 0.14),
+    0 0 16px rgba(45, 226, 230, 0.16);
+  transform: translateY(-1px);
+}
+
+.demo-actions button:focus-visible {
+  outline: 2px solid rgba(207, 255, 112, 0.72);
+  outline-offset: 2px;
+}
+
+.demo-actions button:active {
+  transform: translateY(1px);
+}
+
+.demo-actions button:disabled {
+  border-color: rgba(142, 160, 132, 0.28);
+  color: var(--text-muted);
+  cursor: wait;
+  opacity: 0.64;
+  transform: none;
+}
+
+.demo-actions button:disabled::before {
+  color: var(--text-muted);
+}
+
+/* Keep command buttons in a balanced 2x2 grid before the panes stack. */
+@media (min-width: 901px) and (max-width: 1240px) {
+  .demo-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, max-content));
+    justify-content: center;
+  }
+}
+
+/* Stack the terminal panes into two separate panels on small screens. */
+@media (max-width: 900px) {
+  .demo-label-row {
+    display: none;
+  }
+
+  .fabricator-demo {
+    grid-template-columns: 1fr;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .demo-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .demo-column {
+    display: grid;
+    grid-template-rows: auto minmax(18rem, 1fr) auto;
+    gap: 0.75rem;
+    min-width: 0;
+    padding: 1rem;
+    background:
+      linear-gradient(rgba(207, 255, 112, 0.035) 1px, transparent 1px),
+      var(--surface);
+    background-size: 100% 2rem;
+    border: 1px solid rgba(207, 255, 112, 0.32);
+    border-radius: 2px;
+    box-shadow:
+      inset 0 0 0 1px rgba(216, 227, 207, 0.045),
+      0 10px 28px rgba(0, 0, 0, 0.26);
+  }
+
+  .demo-column + .demo-column {
+    margin-top: 1.5rem;
+  }
+
+  .demo-column:first-child .demo-titlebar,
+  .demo-column:nth-child(2) .demo-titlebar,
+  .demo-terminal,
+  .demo-generated,
+  .demo-actions {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .demo-terminal {
+    border-right: 0;
+    border-bottom: 1px solid rgba(207, 255, 112, 0.28);
+  }
+}
+
+/* Preserve the 2x2 command layout on very narrow screens. */
+@media (max-width: 570px) {
+  .demo-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, max-content));
+    justify-content: center;
+  }
+}
