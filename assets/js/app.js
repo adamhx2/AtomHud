@@ -41,20 +41,19 @@ const skillSections = [
 
   {
     title: "Documentation",
-    skills: [
-      "Technical Writing",
-      "Documentation",
-      "Wiki Management",
-      "Technical Translation",
-    ],
+    skills: ["Technical Writing", "Wiki Management", "Technical Translation"],
   },
 ];
 
 const rotatorTrack = document.querySelector("[data-rotator-track]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const navLinks = document.querySelector("[data-nav-links]");
-const demoTerminalOutput = document.querySelector("[data-demo-terminal-output]");
-const demoGeneratedOutput = document.querySelector("[data-demo-generated-output]");
+const demoTerminalOutput = document.querySelector(
+  "[data-demo-terminal-output]",
+);
+const demoGeneratedOutput = document.querySelector(
+  "[data-demo-generated-output]",
+);
 const demoButtons = document.querySelectorAll("[data-demo-command]");
 
 const cycleDelay = 2600;
