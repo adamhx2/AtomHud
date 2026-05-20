@@ -80,8 +80,12 @@
               <button type="button" data-demo-command="add">
                 fbr add [module]
               </button>
-              <button type="button" data-demo-command="doctor">fbr doctor</button>
-              <button type="button" data-demo-command="clear">clear output</button>
+              <button type="button" data-demo-command="doctor">
+                fbr doctor
+              </button>
+              <button type="button" data-demo-command="clear">
+                clear output
+              </button>
             </div>
           </div>
 
@@ -92,6 +96,86 @@
               <pre><code data-demo-generated-output></code></pre>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="section panel commands-panel">
+        <h1 class="section-title">Commands</h1>
+        <div class="command-quadrants">
+          <article class="command-card">
+            <h2>Build</h2>
+            <ul class="command-list">
+              <li>
+                <code>fbr init [template]</code>
+                <span>Initialize a new project. Defaults to <code>python</code>.</span>
+              </li>
+              <li>
+                <code>fbr add [module]</code>
+                <span>Add a reusable module under <code>utils/</code>.</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="command-card">
+            <h2>Inspect</h2>
+            <ul class="command-list">
+              <li>
+                <code>fbr doctor</code>
+                <span>Check the project marker and template metadata.</span>
+                <ul class="command-sublist">
+                  <li>
+                    <code>marker</code>
+                    <span>Confirms <code>.fabricator/project.toml</code> exists.</span>
+                  </li>
+                  <li>
+                    <code>template</code>
+                    <span>Confirms the saved template is valid.</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+
+          <article class="command-card">
+            <h2>Discover</h2>
+            <ul class="command-list">
+              <li>
+                <code>fbr list</code>
+                <span>List available project templates.</span>
+              </li>
+              <li>
+                <code>fbr modules</code>
+                <span>List available utility modules.</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="command-card">
+            <h2>Project</h2>
+            <ul class="command-list">
+              <li>
+                <code>fbr info</code>
+                <span>Show Fabricator project metadata.</span>
+              </li>
+              <li>
+                <code>fbr --version</code>
+                <span>Show the installed Fabricator version.</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="command-options">
+          <h2>Shared Options</h2>
+          <dl>
+            <div>
+              <dt><code>--force</code></dt>
+              <dd>Overwrite files that already exist.</dd>
+            </div>
+            <div>
+              <dt><code>--dry-run</code></dt>
+              <dd>Preview the operation without writing files.</dd>
+            </div>
+          </dl>
         </div>
       </section>
     </main>

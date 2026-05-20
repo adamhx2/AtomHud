@@ -171,6 +171,154 @@
   color: var(--text-muted);
 }
 
+/* Command reference panel */
+.commands-panel {
+  margin-top: 2rem;
+}
+
+.command-quadrants {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.command-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0.75rem;
+  min-height: 100%;
+  padding: 1rem;
+  background: rgba(7, 16, 7, 0.34);
+  border: 1px solid rgba(45, 226, 230, 0.24);
+}
+
+.command-card h2 {
+  margin: 0;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid rgba(207, 255, 112, 0.22);
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.command-list {
+  display: grid;
+  align-content: start;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.command-list li {
+  display: grid;
+  grid-template-columns: 1rem minmax(11rem, max-content) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 0.65rem 0.75rem;
+  background: rgba(7, 16, 7, 0.42);
+  border: 1px solid rgba(45, 226, 230, 0.24);
+}
+
+.command-sublist {
+  grid-column: 2 / -1;
+  display: grid;
+  gap: 0.45rem;
+  margin: 0.35rem 0 0;
+  padding: 0.55rem 0 0 1rem;
+  border-left: 1px solid rgba(45, 226, 230, 0.28);
+  list-style: none;
+}
+
+.command-sublist li {
+  display: grid;
+  grid-template-columns: 1rem minmax(8rem, max-content) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 0.35rem 0;
+  background: transparent;
+  border: 0;
+}
+
+.command-list li::before,
+.command-sublist li::before {
+  content: ">";
+  color: var(--accent-system);
+  font-weight: 900;
+}
+
+.command-list code,
+.command-sublist code {
+  color: var(--accent-signal);
+  font-family: Consolas, "Courier New", monospace;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  font-weight: 700;
+}
+
+.command-list span,
+.command-sublist span {
+  color: var(--text);
+  font-size: clamp(1.05rem, 1.2vw, 1.25rem);
+  line-height: 1.25;
+}
+
+.command-options {
+  margin-top: 1rem;
+  padding: 1rem;
+  background:
+    linear-gradient(90deg, rgba(207, 255, 112, 0.07), transparent 70%),
+    rgba(7, 16, 7, 0.42);
+  border: 1px solid rgba(207, 255, 112, 0.28);
+}
+
+.command-options h2 {
+  margin: 0 0 0.75rem;
+  color: var(--accent-signal);
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.command-options dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 0;
+}
+
+.command-options div {
+  display: grid;
+  grid-template-columns: minmax(8rem, max-content) minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.55rem 0.75rem;
+  background: rgba(16, 24, 16, 0.62);
+  border: 1px solid rgba(207, 255, 112, 0.2);
+}
+
+.command-options dt,
+.command-options dd {
+  margin: 0;
+}
+
+.command-options code {
+  color: #e2ff9c;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  font-weight: 700;
+}
+
+.command-options dd {
+  color: var(--text);
+  font-size: clamp(1.05rem, 1.2vw, 1.25rem);
+  line-height: 1.25;
+}
+
 /* Keep command buttons in a balanced 2x2 grid before the panes stack. */
 @media (min-width: 901px) and (max-width: 1240px) {
   .demo-actions {
@@ -182,10 +330,6 @@
 
 /* Stack the terminal panes into two separate panels on small screens. */
 @media (max-width: 900px) {
-  .demo-label-row {
-    display: none;
-  }
-
   .fabricator-demo {
     grid-template-columns: 1fr;
     background: transparent;
@@ -232,6 +376,29 @@
   .demo-terminal {
     border-right: 0;
     border-bottom: 1px solid rgba(207, 255, 112, 0.28);
+  }
+
+  .command-quadrants,
+  .command-options dl {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .command-list li,
+  .command-sublist li {
+    grid-template-columns: 1rem minmax(0, 1fr);
+  }
+
+  .command-list code,
+  .command-list span,
+  .command-sublist code,
+  .command-sublist span {
+    grid-column: 2;
+  }
+
+  .command-options div {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
   }
 }
 
