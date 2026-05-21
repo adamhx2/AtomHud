@@ -224,6 +224,11 @@
   border: 1px solid rgba(45, 226, 230, 0.24);
 }
 
+.command-list li:hover {
+  background: rgba(45, 226, 230, 0.36);
+  border-color: rgb(255, 255, 255);
+}
+
 .command-sublist {
   grid-column: 2 / -1;
   display: grid;
