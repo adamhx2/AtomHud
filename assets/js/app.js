@@ -74,7 +74,7 @@ const demoModules = ["csv", "dates", "env", "files", "json", "txt"];
 const demoTrees = {
   init: [
     ".",
-    "|-- .fabricator/",
+    "|-- .envoker/",
     "|   |-- project.toml",
     "|-- src/",
     "|   |-- main.py",
@@ -189,7 +189,7 @@ function buildGeneratedTree({
 } = {}) {
   const lines = [
     ".",
-    "|-- .fabricator/",
+    "|-- .envoker/",
     "|   |-- project.toml",
     "|-- src/",
     "|   |-- main.py",
@@ -236,14 +236,14 @@ function getDemoResult(command) {
     hasDemoProjectTree = true;
 
     return {
-      terminal: `PS demo> fbr init
+      terminal: `PS demo> envoke init
 Created: .env.example
 Created: .gitignore
 Created: README.md
 Created: requirements.txt
 Created: src/main.py
-Created marker: .fabricator/project.toml
-Project initialized with Fabricator.`,
+Created marker: .envoker/project.toml
+Project initialized with ENVoker.`,
       generated: buildGeneratedTree(),
     };
   }
@@ -251,12 +251,12 @@ Project initialized with Fabricator.`,
   if (command === "doctor") {
     if (!hasDemoProjectTree) {
       return {
-        terminal: `PS demo> fbr doctor
-== Fabricator Doctor ==
+        terminal: `PS demo> envoke doctor
+== ENVoker Doctor ==
 
 Checking marker... X Not found
 
-  -> run: fbr init
+  -> run: envoke init
 
 X Issues detected`,
         generated: null,
@@ -264,8 +264,8 @@ X Issues detected`,
     }
 
     return {
-      terminal: `PS demo> fbr doctor
-== Fabricator Doctor ==
+      terminal: `PS demo> envoke doctor
+== ENVoker Doctor ==
 Checking marker... OK Found
 Checking metadata... OK Readable
 Checking template... OK Valid
@@ -277,10 +277,10 @@ OK Project is healthy`,
 
   if (!hasDemoProjectTree) {
     return {
-      terminal: `PS demo> fbr add [module]
-Not a Fabricator project.
+      terminal: `PS demo> envoke add [module]
+Not an ENVoker project.
 
-  -> run: fbr init`,
+  -> run: envoke init`,
       generated: "",
     };
   }
@@ -289,7 +289,7 @@ Not a Fabricator project.
 
   if (!moduleName) {
     return {
-      terminal: `PS demo> fbr add [module]
+      terminal: `PS demo> envoke add [module]
 All available modules already added.
 
 Available modules: ${demoModules.join(", ")}`,
@@ -304,7 +304,7 @@ Available modules: ${demoModules.join(", ")}`,
   hasDemoProjectTree = true;
 
   return {
-    terminal: `PS demo> fbr add ${moduleName}
+    terminal: `PS demo> envoke add ${moduleName}
 Created: utils/${moduleName}.py
 Added module: ${moduleName}`,
     generated: buildGeneratedTree({

@@ -6,7 +6,7 @@
     <title>Atom Hub</title>
 
     <link rel="stylesheet" href="../assets/css/app.css" />
-    <link rel="stylesheet" href="../assets/css/pages/fabricator.css" />
+    <link rel="stylesheet" href="../assets/css/pages/envoker.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,26 +46,26 @@
     <main class="page-content">
       <header class="page-title panel">
         <span>02.01 / Environment Generator</span>
-        <h1>Fabricator</h1>
+        <h1>ENVoker</h1>
       </header>
       <section id="overview" class="section panel">
         <h1 class="section-title">Overview</h1>
         <p class="section-content">
-          Fabricator is a CLI tool that reduces setup friction when starting new
+          ENVoker is a CLI tool that reduces setup friction when starting new
           projects. It came from making frequent ad-hoc projects and getting
           tired of repeating the same setup steps: <code>.env</code> files,
           virtual environments, <code>.gitignore</code>, basic folders, and
           small utility helpers. <br /><br />
 
           I would start building, realize I forgot something, stop to fix it,
-          and lose momentum. Fabricator takes that repeated setup work out of
+          and lose momentum. ENVoker takes that repeated setup work out of
           the equation. It should not make decisions for the project or hide
           what it is doing. It creates predictable structure, adds reusable
           helper modules, and keeps the behavior explicit.
         </p>
       </section>
-      <section class="fabricator-demo panel">
-        <h1 class="section-title">Fabricator Demo</h1>
+      <section class="envoker-demo panel">
+        <h1 class="section-title">ENVoker Demo</h1>
 
         <div class="demo-grid">
           <div class="demo-column">
@@ -76,12 +76,12 @@
             </div>
 
             <div class="demo-actions">
-              <button type="button" data-demo-command="init">fbr init</button>
+              <button type="button" data-demo-command="init">envoke init</button>
               <button type="button" data-demo-command="add">
-                fbr add [module]
+                envoke add [module]
               </button>
               <button type="button" data-demo-command="doctor">
-                fbr doctor
+                envoke doctor
               </button>
               <button type="button" data-demo-command="clear">
                 clear output
@@ -105,14 +105,14 @@
             <h2>Build</h2>
             <ul class="command-list">
               <li>
-                <code>fbr init [template]</code>
+                <code>envoke init [template]</code>
                 <span
                   >Initialize a new project. Defaults to
                   <code>python</code>.</span
                 >
               </li>
               <li>
-                <code>fbr add [module]</code>
+                <code>envoke add [module]</code>
                 <span>Add a reusable module under <code>utils/</code>.</span>
               </li>
             </ul>
@@ -122,14 +122,14 @@
             <h2>Inspect</h2>
             <ul class="command-list">
               <li>
-                <code>fbr doctor</code>
+                <code>envoke doctor</code>
                 <span>Check the project marker and template metadata.</span>
                 <ul class="command-sublist">
                   <li>
                     <code>marker</code>
                     <span
                       >Confirms
-                      <code>.fabricator/project.toml</code> exists.</span
+                      <code>.envoker/project.toml</code> exists.</span
                     >
                   </li>
                   <li>
@@ -145,11 +145,11 @@
             <h2>Discover</h2>
             <ul class="command-list">
               <li>
-                <code>fbr list</code>
+                <code>envoke list</code>
                 <span>List available project templates.</span>
               </li>
               <li>
-                <code>fbr modules</code>
+                <code>envoke modules</code>
                 <span>List available utility modules.</span>
               </li>
             </ul>
@@ -159,12 +159,12 @@
             <h2>Project</h2>
             <ul class="command-list">
               <li>
-                <code>fbr info</code>
-                <span>Show Fabricator project metadata.</span>
+                <code>envoke info</code>
+                <span>Show ENVoker project metadata.</span>
               </li>
               <li>
-                <code>fbr --version</code>
-                <span>Show the installed Fabricator version.</span>
+                <code>envoke --version</code>
+                <span>Show the installed ENVoker version.</span>
               </li>
             </ul>
           </article>

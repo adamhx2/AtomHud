@@ -1,9 +1,9 @@
 /* ==========================================================================
-   Fabricator Demo Page
+   ENVoker Demo Page
    ========================================================================== */
 
 /* Demo shell */
-.fabricator-demo {
+.envoker-demo {
   display: grid;
   gap: 1rem;
   margin-top: 2rem;
@@ -335,7 +335,7 @@
 
 /* Stack the terminal panes into two separate panels on small screens. */
 @media (max-width: 900px) {
-  .fabricator-demo {
+  .envoker-demo {
     grid-template-columns: 1fr;
     background: transparent;
     border: 0;
