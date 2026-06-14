@@ -2,15 +2,232 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=assets/resume/resume.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume - Atom Hub</title>
-    <link rel="canonical" href="assets/resume/resume.html" />
+    <title>Atom Hub</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/js/app.js" defer></script>
   </head>
   <body>
-    <p>
-      Resume moved to
-      <a href="assets/resume/resume.html">assets/resume/resume.html</a>.
-    </p>
+    <nav class="site-nav">
+      <div class="site-title"><span>ATOM HUD</span></div>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        data-nav-toggle
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" data-nav-links>
+        <a class="nav-link" href="index.html" data-index="01">Home</a>
+        <a class="nav-link" href="portfolio.html" data-index="02"
+          >Portfolio</a
+        >
+        <a class="nav-link is-active" href="resume.html" data-index="03"
+          >Resume</a
+        >
+        <a class="nav-link" href="projects.html" data-index="04"
+          >Past Projects</a
+        >
+        <a class="nav-link" href="workshop.html" data-index="05"
+          >Workshop</a
+        >
+      </div>
+    </nav>
+
+    <main class="page-content">
+      <header class="page-title panel resume-hero">
+        <span>03 / Experience</span>
+        <h1>Adam Hudson</h1>
+        <p class="page-title__lede">
+          Developer focused on practical systems, automation, and operational
+          tooling.
+        </p>
+        <div class="resume-actions" aria-label="Resume links">
+          <a href="portfolio.html">Portfolio</a>
+          <a href="https://github.com/adamhx2">GitHub</a>
+          <a href="workshop.html">Workshop</a>
+          <a href="mailto:adamhsquared@outlook.com">Email</a>
+        </div>
+      </header>
+
+      <div class="resume-layout">
+        <aside class="resume-sidebar">
+          <section id="resume-contact" class="section panel resume-panel">
+            <h2 class="section-title">Contact</h2>
+            <ul class="resume-contact-list">
+              <li><a href="tel:+19362066249">(936) 206-6249</a></li>
+              <li>
+                <a href="mailto:adamhsquared@outlook.com"
+                  >adamhsquared@outlook.com</a
+                >
+              </li>
+              <li>Taylor, Michigan</li>
+            </ul>
+          </section>
+
+          <section id="resume-files" class="section panel resume-panel">
+            <h2 class="section-title">Resume Files</h2>
+            <ul class="resume-contact-list">
+              <li>
+                <a href="assets/resume/adamhudson-resume.txt" download>Plain text resume</a>
+              </li>
+              <li>
+                <button
+                  class="resume-file-button"
+                  type="button"
+                  data-print-resume
+                >
+                  Print / Save as PDF
+                </button>
+              </li>
+            </ul>
+          </section>
+
+          <section id="education" class="section panel resume-panel">
+            <h2 class="section-title">Education</h2>
+            <ul class="resume-signal-list">
+              <li>Lone Star College - Kingwood Texas</li>
+              <li>Networking and Computer Information Systems</li>
+              <li>2017-2019</li>
+              <li>IT infrastructure, systems management, and support</li>
+            </ul>
+          </section>
+
+          <section id="skills" class="section panel resume-panel">
+            <h2 class="section-title">Core Tools</h2>
+            <ul class="resume-chip-list">
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Automation</li>
+              <li>APIs</li>
+              <li>Git</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Apache Superset</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>Zendesk APIs</li>
+              <li>Google Sheets</li>
+            </ul>
+          </section>
+
+          <section id="resume-focus" class="section panel resume-panel">
+            <h2 class="section-title">Focus</h2>
+            <ul class="resume-signal-list">
+              <li>Internal tool development</li>
+              <li>Workflow automation</li>
+              <li>SQL-backed systems</li>
+              <li>Operational problem solving</li>
+            </ul>
+          </section>
+        </aside>
+
+        <section class="resume-main">
+          <section class="section panel resume-panel">
+            <h2 class="section-title">Profile</h2>
+            <p class="resume-copy">
+              I build practical systems: scripts that remove repetitive work,
+              dashboards that make operations visible, integrations that connect
+              tools, and utilities that make day-to-day work easier.
+            </p>
+          </section>
+
+          <section class="section panel resume-panel">
+            <h2 class="section-title">Work History</h2>
+            <div class="resume-timeline">
+              <article class="resume-item">
+                <span>Versatrans / 2022-Present</span>
+                <h3>IT Technician -> Developer / Automation / Data</h3>
+                <p>
+                  Originally hired as an IT Technician, then expanded into a
+                  hybrid technical role spanning Python development, workflow
+                  automation, SQL reporting, dashboards, data cleanup, API
+                  integrations, and internal support systems.
+                </p>
+                <ul class="resume-detail-list">
+                  <li>
+                    Builds Python tools and scripts that remove repetitive
+                    manual work and improve operational workflows.
+                  </li>
+                  <li>
+                    Develops automations that pull data from Zendesk, internal
+                    databases, Google Sheets, and CSV files, then turn it into
+                    clean, usable outputs.
+                  </li>
+                  <li>
+                    Builds SQL-backed reporting systems, Apache Superset
+                    dashboards, calculated fields, workflow logic, and
+                    user-level filtered views.
+                  </li>
+                  <li>
+                    Maintains 10+ production scripts in GitLab with documented
+                    logic, scheduled jobs, API integrations, and validation
+                    checks.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="resume-item">
+                <span>Versatrans Role Coverage</span>
+                <h3>Systems, Support, SQL, and Tooling</h3>
+                <p>
+                  This work sits between support, development, data, and
+                  operations. A typical day might move from supporting users and
+                  troubleshooting issues to building an ad hoc report. Another
+                  day might center on writing a script that solves a larger
+                  workflow issue.
+                </p>
+                <ul class="resume-detail-list">
+                  <li>
+                    Supports users, systems, access requests, and onboarding
+                    while using troubleshooting context to spot workflow gaps
+                    worth automating.
+                  </li>
+                  <li>
+                    Builds Python scripts, scheduled jobs, API pulls, reporting
+                    helpers, and reusable data-cleanup workflows.
+                  </li>
+                  <li>
+                    Builds SQL logic with joins, CTEs, window functions,
+                    aggregation, validation checks, and structured dataset
+                    design.
+                  </li>
+                  <li>
+                    Creates dashboards, operational reports, documentation, and
+                    technical explanations for teams that need clear answers
+                    more than extra complexity.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="resume-item">
+                <span>ianAsher Open Solutions / 2020-2021</span>
+                <h3>Helpdesk Technician</h3>
+                <p>
+                  Delivered Level 1-2 support for remote and on-site users,
+                  handled onboarding and device setup, managed Active Directory
+                  accounts, and assisted with O365 migrations, cloud storage,
+                  VPN setup, and MFA implementation.
+                </p>
+              </article>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
   </body>
 </html>

@@ -1032,6 +1032,18 @@ body {
   color: var(--accent-system);
 }
 
+.project-link-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 18rem));
+  justify-content: center;
+}
+
+.project-link-grid span,
+.project-link-grid a {
+  width: 100%;
+  min-width: 0;
+}
+
 /* ==========================================================================
    Responsive
    ========================================================================== */
@@ -1162,6 +1174,10 @@ body {
 
   .nav-link {
     padding: 0.65rem 0.75rem;
+  }
+
+  .project-link-grid {
+    grid-template-columns: 1fr;
   }
 
   .resume-actions a {
