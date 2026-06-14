@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atom Hub</title>
+    <title>Work Project Template | Atom Hub</title>
     <link rel="stylesheet" href="../css/app.css" />
     <script src="../js/app.js" defer></script>
   </head>
@@ -11,43 +11,138 @@
     <!--
       Work Project Template
 
-      Copy this file into the public project location when you are ready to
-      publish a sanitized work-project writeup. Keep private names, vendors,
-      customer data, and implementation details out of the public copy.
+      Copy this file into the projects/ folder when you are ready to publish a
+      sanitized project writeup.
+
+      Keep this generic:
+      - Do not include private customer names, internal system names, or secrets.
+      - Describe vendor tools only when they are safe to name publicly.
+      - Focus on the problem, the practical system, the tools/skills used, and
+        the result.
     -->
+    <nav class="site-nav">
+      <div class="site-title"><span>ATOM HUD</span></div>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        data-nav-toggle
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" data-nav-links>
+        <a class="nav-link" href="../../index.html" data-index="01">Home</a>
+        <a class="nav-link" href="../../portfolio.html" data-index="02"
+          >Portfolio</a
+        >
+        <a class="nav-link" href="../resume/resume.html" data-index="03"
+          >Resume</a
+        >
+        <a class="nav-link is-active" href="../../projects.html" data-index="04"
+          >Past Projects</a
+        >
+        <a class="nav-link" href="../../workshop.html" data-index="05"
+          >Workshop</a
+        >
+      </div>
+    </nav>
+
     <main class="page-content case-study">
       <header class="page-title panel">
-        <span>03.xx / Work Project</span>
+        <span>04.xx / Work Project</span>
         <h1>Project Name</h1>
       </header>
 
       <section class="section panel case-study-section">
-        <h1 class="section-title">Problem</h1>
-        <p class="case-study-lede">What repeated friction did this solve?</p>
-      </section>
-
-      <section class="section panel case-study-section">
-        <h1 class="section-title">Approach</h1>
-        <p class="case-study-copy">
-          Summarize the system design, workflow, data flow, automation, or
-          reporting logic.
+        <h1 class="section-title">Overview</h1>
+        <p class="case-study-lede">
+          One or two sentences describing what the project does and why it
+          matters.
+        </p>
+        <p class="case-study-note">
+          Public writeup of a work project. Details are summarized and sanitized
+          where needed.
         </p>
       </section>
 
       <section class="section panel case-study-section">
-        <h1 class="section-title">Tools</h1>
-        <div class="case-study-tag-grid">
-          <span>Tag 1</span>
-          <span>Tag 2</span>
-          <span>Tag 3</span>
+        <h1 class="section-title">The Problem</h1>
+        <p class="case-study-copy">
+          Describe the friction, manual process, reporting gap, support issue,
+          or workflow problem this project was meant to solve.
+        </p>
+      </section>
+
+      <section class="section panel case-study-section">
+        <h1 class="section-title">What It Does</h1>
+        <div class="case-study-panel-grid">
+          <article class="case-study-card">
+            <h2>Input</h2>
+            <p>What data, request, event, file, ticket, or workflow starts it?</p>
+          </article>
+          <article class="case-study-card">
+            <h2>Process</h2>
+            <p>What does the project transform, automate, check, or organize?</p>
+          </article>
+          <article class="case-study-card">
+            <h2>Output</h2>
+            <p>What does it produce for users, teams, reports, or systems?</p>
+          </article>
         </div>
       </section>
 
       <section class="section panel case-study-section">
-        <h1 class="section-title">Impact</h1>
+        <h1 class="section-title">Tools & Skills</h1>
+        <div class="case-study-tag-grid">
+          <span>Tool / Skill</span>
+          <span>Tool / Skill</span>
+          <span>Tool / Skill</span>
+          <span>Tool / Skill</span>
+        </div>
+      </section>
+
+      <section class="section panel case-study-section">
+        <h1 class="section-title">How It Works</h1>
         <p class="case-study-copy">
-          Explain the practical outcome: time saved, fewer manual handoffs,
-          clearer reporting, reduced errors, or easier support.
+          Explain the main design in plain language. Keep it practical: data
+          flow, scripts, queries, dashboards, integrations, scheduled jobs,
+          validation, handoffs, or user-facing behavior.
+        </p>
+        <ol class="case-study-timeline">
+          <li>
+            <h2>Step 1</h2>
+            <p>What starts the workflow?</p>
+          </li>
+          <li>
+            <h2>Step 2</h2>
+            <p>What processing, decision, or transformation happens?</p>
+          </li>
+          <li>
+            <h2>Step 3</h2>
+            <p>What final output, handoff, report, or action is created?</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section panel case-study-section">
+        <h1 class="section-title">Result</h1>
+        <p class="case-study-copy">
+          Describe the practical result: less manual work, fewer errors, faster
+          reporting, clearer visibility, better handoffs, easier support, or a
+          repeatable process.
+        </p>
+      </section>
+
+      <section class="section panel case-study-section">
+        <h1 class="section-title">What It Shows</h1>
+        <p class="case-study-copy">
+          Name the skills this project demonstrates. Examples: automation
+          thinking, SQL reasoning, API integration, data validation, dashboard
+          design, troubleshooting, documentation, or user-centered internal
+          tooling.
         </p>
       </section>
     </main>
