@@ -795,11 +795,14 @@ body {
 .case-study-tag-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.case-study-tag-grid span {
-  padding: 0.45rem 0.7rem;
+.case-study-tag-grid span,
+.case-study-tag-grid a {
+  min-width: 9rem;
+  padding: 0.7rem 1.1rem;
   background: rgba(207, 255, 112, 0.08);
   border: 1px solid rgba(207, 255, 112, 0.26);
   color: var(--accent-signal);
@@ -807,7 +810,14 @@ body {
   font-weight: 900;
   letter-spacing: 0.08em;
   line-height: 1;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.case-study-tag-grid a:hover {
+  border-color: var(--accent-system);
+  color: var(--accent-system);
 }
 
 /* ==========================================================================

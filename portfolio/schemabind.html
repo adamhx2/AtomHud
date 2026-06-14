@@ -42,11 +42,77 @@
         >
       </div>
     </nav>
-    <main class="page-content">
+    <main class="page-content case-study">
       <header class="page-title panel">
         <span>02.03 / Schema Ergonomics</span>
         <h1>SchemaBind</h1>
       </header>
+
+      <section class="section panel case-study-section">
+        <p class="case-study-lede">
+          SchemaBind is a tiny Python package for turning existing dictionary
+          fields into readable attribute access.
+        </p>
+        <p class="case-study-copy">
+          It came from working with CSV rows and wanting less repetitive lookup
+          code. The library keeps the scope deliberately small: bind a dict,
+          read fields as attributes, preserve normal dictionary helpers, and
+          fail clearly when a field name is missing or ambiguous.
+        </p>
+      </section>
+
+      <section class="section panel case-study-section">
+        <h1 class="section-title">Use</h1>
+        <div class="case-study-comparison">
+          <article class="case-study-card">
+            <h2>Before</h2>
+            <p><code>first = row["First Name"]</code></p>
+            <p><code>email = row.get("Email Address")</code></p>
+          </article>
+          <article class="case-study-card">
+            <h2>After</h2>
+            <p><code>customer = bind(row)</code></p>
+            <p><code>customer.first_name</code></p>
+            <p><code>customer.email_address</code></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section panel case-study-section">
+        <h1 class="section-title">What It Does</h1>
+        <div class="case-study-panel-grid">
+          <article class="case-study-card">
+            <h2>Bind Dicts</h2>
+            <p>Wraps mapping-style row data without changing the original keys.</p>
+          </article>
+          <article class="case-study-card">
+            <h2>Normalize Names</h2>
+            <p><code>First Name</code> becomes <code>first_name</code> for access.</p>
+          </article>
+          <article class="case-study-card">
+            <h2>Catch Ambiguity</h2>
+            <p>Duplicate normalized names raise errors instead of guessing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section panel case-study-section">
+        <h1 class="section-title">Project Signal</h1>
+        <ul class="case-study-chain">
+          <li>Published to PyPI as <code>schemabind</code></li>
+          <li>Tested with pytest</li>
+          <li>Built through feature branches and pull requests</li>
+          <li>Kept intentionally narrow: no schemas, models, or validation</li>
+        </ul>
+      </section>
+
+      <section class="section panel case-study-section">
+        <h1 class="section-title">Links</h1>
+        <div class="case-study-tag-grid">
+          <a href="https://pypi.org/project/schemabind/">PyPI</a>
+          <a href="https://github.com/adamhx2/SchemaBind">GitHub</a>
+        </div>
+      </section>
     </main>
   </body>
 </html>
