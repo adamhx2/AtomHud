@@ -1,0 +1,111 @@
+ADAM HUDSON
+Developer - Automation, SQL, Internal Tools
+
+Taylor, Michigan
+(936) 206-6249
+adamhsquared@outlook.com
+Portfolio: https://atomhud.com/portfolio.html
+GitHub: https://github.com/adamhx2
+
+
+PROFILE
+
+Developer focused on practical systems, automation, and operational tooling.
+I build scripts that remove repetitive work, dashboards that make operations
+visible, integrations that connect tools, and utilities that make day-to-day
+work easier.
+
+
+CORE TOOLS
+
+Languages and development:
+- Python
+- SQL
+- HTML
+- CSS
+- Git
+
+Automation and integrations:
+- APIs
+- Scheduled jobs
+- Reporting helpers
+- Data cleanup workflows
+- Zendesk APIs
+- Google Sheets
+
+Data and reporting:
+- PostgreSQL
+- MySQL
+- Apache Superset
+- SQL-backed reporting systems
+- Dashboards
+- Workflow logic
+- Validation checks
+
+
+FOCUS AREAS
+
+- Internal tool development
+- Workflow automation
+- SQL-backed systems
+- Operational problem solving
+- Dashboard and reporting workflows
+- API integrations
+- Technical support and systems troubleshooting
+
+
+WORK HISTORY
+
+Versatrans
+IT Technician -> Developer / Automation / Data
+2022-Present
+
+Originally hired as an IT Technician, then expanded into a hybrid technical
+role spanning Python development, workflow automation, SQL reporting,
+dashboards, data cleanup, API integrations, and internal support systems.
+
+- Builds Python tools and scripts that remove repetitive manual work and
+  improve operational workflows.
+- Develops automations that pull data from Zendesk, internal databases,
+  Google Sheets, and CSV files, then turn it into clean, usable outputs.
+- Builds SQL-backed reporting systems, Apache Superset dashboards, calculated
+  fields, workflow logic, and user-level filtered views.
+- Maintains 10+ production scripts in GitLab with documented logic, scheduled
+  jobs, API integrations, and validation checks.
+
+Role coverage:
+
+This work sits between support, development, data, and operations. A typical
+day might move from supporting users and troubleshooting issues to building an
+ad hoc report. Another day might center on writing a script that solves a
+larger workflow issue.
+
+- Supports users, systems, access requests, and onboarding while using
+  troubleshooting context to spot workflow gaps worth automating.
+- Builds Python scripts, scheduled jobs, API pulls, reporting helpers, and
+  reusable data-cleanup workflows.
+- Builds SQL logic with joins, CTEs, window functions, aggregation, validation
+  checks, and structured dataset design.
+- Creates dashboards, operational reports, documentation, and technical
+  explanations for teams that need clear answers more than extra complexity.
+
+
+ianAsher Open Solutions
+Helpdesk Technician
+2020-2021
+
+- Delivered Level 1-2 support for remote and on-site users.
+- Handled onboarding and device setup.
+- Managed Active Directory accounts.
+- Assisted with O365 migrations, cloud storage, VPN setup, and MFA
+  implementation.
+
+
+EDUCATION
+
+Lone Star College - Kingwood Texas
+Networking and Computer Information Systems
+2017-2019
+
+Studied IT infrastructure, systems management, technical support, networking
+concepts, hardware troubleshooting, and foundational computing principles.

@@ -55,6 +55,7 @@ const demoGeneratedOutput = document.querySelector(
   "[data-demo-generated-output]",
 );
 const demoButtons = document.querySelectorAll("[data-demo-command]");
+const printResumeButtons = document.querySelectorAll("[data-print-resume]");
 
 const cycleDelay = 2600;
 const deleteDelay = 55;
@@ -425,3 +426,9 @@ if (demoTerminalOutput && demoGeneratedOutput) {
     });
   });
 }
+
+printResumeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    window.print();
+  });
+});
