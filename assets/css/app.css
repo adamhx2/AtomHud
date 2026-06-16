@@ -478,7 +478,7 @@ body {
 /* Route cards */
 .route-section {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 0 2rem 2rem;
 }
@@ -1740,5 +1740,4 @@ body {
     font-weight: 400;
     line-height: 1.2;
   }
-
 }
