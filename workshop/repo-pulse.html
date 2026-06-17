@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atom Hub</title>
+    <title>RepoPulse | Adam Hudson</title>
     <link rel="stylesheet" href="../assets/css/app.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +19,7 @@
   </head>
   <body>
     <nav class="site-nav">
-      <div class="site-title"><span>ATOM HUD</span></div>
+      <a class="site-title" href="../index.html"><span>ATOM HUD</span></a>
       <button
         class="nav-toggle"
         type="button"
@@ -44,11 +44,72 @@
         >
       </div>
     </nav>
-    <main class="page-content">
+    <main class="page-content case-study">
       <header class="page-title panel">
-        <span>04.04 / Work History</span>
+        <span>04.04 / Project Pulse Widget</span>
         <h1>RepoPulse</h1>
       </header>
+
+      <section class="section panel case-study-section">
+        <p class="case-study-lede">
+          RepoPulse is a project-level update widget for showing recent movement
+          directly on individual Workshop pages.
+        </p>
+        <p class="case-study-copy">
+          It came from wanting each project page to feel alive without writing
+          manual status updates every time I make progress. RepoPulse uses
+          recent Git commits as the source for small project updates, like a
+          pulse check for what changed most recently.
+        </p>
+      </section>
+
+      <section class="section panel case-study-section">
+        <h1 class="section-title">Purpose</h1>
+        <p class="case-study-copy">
+          The goal is not to judge productivity by commit count. The goal is to
+          turn project-level Git activity into a small update widget so visitors
+          can see what changed, when it changed, and whether the project is
+          still moving.
+        </p>
+      </section>
+
+      <section class="section panel case-study-section">
+        <h1 class="section-title">Current Status</h1>
+        <div class="case-study-panel-grid">
+          <article class="case-study-card">
+            <h2>Planned Prototype</h2>
+            <p>
+              The first version will read recent commits for a specific project
+              and turn them into short update entries that can live on that
+              project's page.
+            </p>
+          </article>
+          <article class="case-study-card">
+            <h2>Page Widget</h2>
+            <p>
+              RepoPulse is meant to be a lightweight, dynamic page element, not
+              a heavy dashboard or productivity scoreboard.
+            </p>
+          </article>
+          <article class="case-study-card">
+            <h2>Visual Signal</h2>
+            <p>
+              The widget should pop visually: a small shiny status element that
+              makes recent project movement easy to notice.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section panel case-study-section">
+        <h1 class="section-title">What It Demonstrates</h1>
+        <div class="case-study-tag-grid">
+          <span>Git Automation</span>
+          <span>Project Widgets</span>
+          <span>Commit Parsing</span>
+          <span>Visual Status</span>
+        </div>
+      </section>
     </main>
   </body>
 </html>

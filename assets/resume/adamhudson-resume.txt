@@ -1,5 +1,5 @@
 ADAM HUDSON
-Developer - Automation, SQL, Internal Tools
+Developer - Python, Automation, Internal Tools
 
 Taylor, Michigan
 (936) 206-6249
@@ -10,10 +10,12 @@ GitHub: https://github.com/adamhx2
 
 PROFILE
 
-Developer focused on practical systems, automation, and operational tooling.
-I build scripts that remove repetitive work, dashboards that make operations
-visible, integrations that connect tools, and utilities that make day-to-day
-work easier.
+Developer focused on Python, automation, internal tools, and practical
+product-minded systems. I build scripts that remove repetitive work, dashboards
+that make operations visible, integrations that connect tools, and utilities
+that make day-to-day work easier. My background spans IT, SQL, BI, support,
+automation, and internal tooling, which helps me spot practical problems and
+build tools that fit real workflows.
 
 
 CORE TOOLS
@@ -54,6 +56,37 @@ FOCUS AREAS
 - Technical support and systems troubleshooting
 
 
+SELECTED PROJECTS
+
+SchemaBind
+Python Package / Data Ergonomics
+
+Published a focused Python utility for turning existing dictionary and
+CSV-style fields into readable attribute access while preserving the original
+data.
+
+- Keeps the scope deliberately narrow: bind a dict, normalize field names, and
+  fail clearly when a field is missing or ambiguous.
+- Built from day-to-day friction with repetitive row and field access in Python
+  workflows.
+
+ENVoker
+CLI Tool / Project Setup
+
+Built a command-line project setup helper for repeatable .env files, virtual
+environment structure, .gitignore setup, folders, and reusable utility modules.
+
+- Reduces setup friction while keeping the generated structure explicit and
+  easy to inspect.
+
+AtomHUD
+Portfolio / Learning in Public
+
+Built and maintain a personal site to document projects, explain decisions, and
+practice product thinking, frontend structure, copy, and visual taste alongside
+Python development.
+
+
 WORK HISTORY
 
 Versatrans
@@ -75,10 +108,9 @@ dashboards, data cleanup, API integrations, and internal support systems.
 
 Role coverage:
 
-This work sits between support, development, data, and operations. A typical
-day might move from supporting users and troubleshooting issues to building an
-ad hoc report. Another day might center on writing a script that solves a
-larger workflow issue.
+This work connects support, development, data, and operations. I move between
+user support, troubleshooting, ad hoc reporting, SQL-backed analysis, and
+scripts that solve larger workflow issues.
 
 - Supports users, systems, access requests, and onboarding while using
   troubleshooting context to spot workflow gaps worth automating.

@@ -8,3 +8,10 @@ style2.css
 roadmap.md
 
 /style-previews
+
+# Local alternates, backups, and generated artifacts
+projects2.html
+assets/css/*backup*.css
+assets/images/*.psd
+assets/resume/*.docx
+assets/resume/resume.html

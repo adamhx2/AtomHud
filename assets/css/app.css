@@ -154,6 +154,13 @@ body {
     3px 3px 0 #000;
 }
 
+.site-title,
+.site-title:visited,
+.site-title:hover,
+.site-title:focus {
+  text-decoration: none;
+}
+
 .nav-links {
   display: flex;
   flex-wrap: wrap;
