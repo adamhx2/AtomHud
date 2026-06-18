@@ -6,7 +6,6 @@
 .envoker-demo {
   display: grid;
   gap: 1rem;
-  margin-top: 2rem;
   padding: 1rem;
 }
 
@@ -173,7 +172,7 @@
 
 /* Command reference panel */
 .commands-panel {
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 .command-quadrants {
